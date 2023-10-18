@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate all banks USSD transfer codes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      html, body {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-11 col-md-8 my-auto">
+          <h2 class="text-center mb-4">Generate Transfer USSD code now!</h2>
+          <div class="form-group mb-3">
+            <label for="amount">Amount</label>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              name="amount"
+              id="amount"
+              placeholder="Amount"
+              required
+            />
+          </div>
+          <div class="form-group mb-3">
+            <label for="nuban">Receiver Account Number</label>
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              name="nuban"
+              id="nuban"
+              placeholder="Account Number"
+              required
+            />
+          </div>
+          <div class="form-group mb-4">
+            <label for="bankname">Your Bank Name</label>
+            <select
+              class="form-select form-select-lg"
+              name="bankname"
+              id="bankname"
+            ></select>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-block btn-lg btn-info" id="generate">
+              <i class="fas fa-rotate"></i> Generate
+            </button>  
+          </div>
+          
+          <div class="text-center mt-5">
+            <div class="d-flex justify-content-between flex-wrap" id="result">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
